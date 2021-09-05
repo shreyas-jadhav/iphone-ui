@@ -1,3 +1,3 @@
 export const dark = {
-	theme: 'dark',
+	osTheme: 'dark',
 };

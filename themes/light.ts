@@ -1,3 +1,3 @@
 export const light = {
-	theme: 'light',
+	osTheme: 'light',
 };

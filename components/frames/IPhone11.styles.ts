@@ -21,6 +21,7 @@ export const IPhone11FrameWrapper = styled.div`
 	width: 269.85826772px;
 	z-index: -1;
 	box-sizing: border-box;
+	position: relative;
 `;
 
 export const ScreenBorder = styled.div`
@@ -31,4 +32,5 @@ export const ScreenBorder = styled.div`
 	z-index: 1;
 	overflow: hidden;
 	background: black;
+	position: absolute;
 `;

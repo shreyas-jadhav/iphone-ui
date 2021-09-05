@@ -35,8 +35,8 @@ export const FrameColorPicker = ({ colors }) => {
 	return (
 		<FrameColorPickerWrapper>
 			{Object.keys(colors).map((name) => (
-				<li>
-					<ColorButton selected={frameColor === name} key={name} color={colors[name]} onClick={() => setFrameColor(name)}></ColorButton>
+				<li key={name}>
+					<ColorButton selected={frameColor === name} color={colors[name]} onClick={() => setFrameColor(name)}></ColorButton>
 				</li>
 			))}
 		</FrameColorPickerWrapper>

@@ -1,7 +1,7 @@
 import { light } from './light';
 import { dark } from './dark';
 export const common = {
-	theme: 'light',
+	osTheme: 'dark',
 	radius: {
 		screen: {
 			outer: '16px',
