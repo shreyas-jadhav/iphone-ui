@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { BsFillUnlockFill } from 'react-icons/bs';
 import { IoIosFlashlight, IoIosCamera } from 'react-icons/io';
@@ -71,12 +71,17 @@ export const CircularIcon = styled.button`
 `;
 const LockScreen = () => {
 	const props = useSpring({ from: { opacity: 0 }, to: { opacity: 1 }, duration: 500 });
+
+	const [currentTime, setCurrentTime] = useState(moment().format('h[:]mm'));
+	useEffect(() => {
+		setInterval(() => setCurrentTime(moment().format('h[:]mm')), 60000);
+	}, []);
 	return (
 		<AnimatedLockScreen style={props}>
 			<LockLogo>
 				<BsFillUnlockFill size={'100%'} />
 			</LockLogo>
-			<Time>{moment().format('h[:]m')}</Time>
+			<Time>{currentTime}</Time>
 			<DateDisplay>{moment().format('dddd [,] D MMMM')}</DateDisplay>
 			<BottomIcons>
 				<CircularIcon>
