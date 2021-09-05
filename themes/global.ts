@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     border: 1px solid red;
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100%; 
     width: 100%;
     background: black;
     
