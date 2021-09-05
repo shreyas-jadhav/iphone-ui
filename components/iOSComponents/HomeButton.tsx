@@ -10,10 +10,11 @@ const HomeButtonWrapper = styled.div`
 	align-items: center;
 
 	flex-direction: column;
-	position: absolute;
-	bottom: 8px;
+	position: relative;
+	bottom: 12px;
 	height: 4px;
-	margin: 2px;
+	margin: 4px;
+	z-index: 100;
 `;
 const HomeSlider = styled.div`
 	height: 8px;
