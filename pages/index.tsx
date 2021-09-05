@@ -11,7 +11,7 @@ const index = () => {
 			<Iphone11Frame>
 				<FourteenPointSeven />
 			</Iphone11Frame>
-			<FrameColorPicker colors={colors} />
+			{/* <FrameColorPicker colors={colors} /> */}
 		</IPhoneProvider>
 	);
 };

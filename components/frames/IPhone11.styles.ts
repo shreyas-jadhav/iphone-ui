@@ -11,24 +11,26 @@ export const colors = {
 
 export const IPhone11FrameWrapper = styled.div`
 	display: flex;
-	border: 8px solid ${(props) => colors[props.color] || colors.black};
+	// border: 8px solid ${(props) => colors[props.color] || colors.black};
 	background-color: ${(props) => colors[props.color] || colors.black};
-	box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.4);
-	margin: 16px;
+	// box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.4);
+	// margin: 16px;
 	transition: border 500ms linear;
-	border-radius: ${themeGet('radius.screen.outer')};
-	height: 544.2519685px;
-	width: 269.85826772px;
-	z-index: -1;
-	box-sizing: border-box;
+	// border-radius: ${themeGet('radius.screen.outer')};
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
 `;
 
 export const ScreenBorder = styled.div`
-	box-sizing: border-box;
-	border-radius: ${themeGet('radius.screen.inner')};
+	// border-radius: ${themeGet('radius.screen.inner')};
 	height: 100%;
 	width: 100%;
 	z-index: 1;
-	overflow: hidden;
+
 	background: black;
 `;

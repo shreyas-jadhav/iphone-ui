@@ -5,10 +5,18 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
   }
+  html {
+    
+    
+  }
   body {
+    overflow: hidden;
+    border: 1px solid red;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: black;
     
   }
 

@@ -9,10 +9,8 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<GlobalStyle />
-			<button onClick={() => setTheme(`light`)}>Light</button>
-			<button onClick={() => setTheme(`dark`)}>Dark</button>
 			<ThemeProvider theme={allThemes[theme]}>
-				<Component {...pageProps} />;
+				<Component {...pageProps} />
 			</ThemeProvider>
 		</>
 	);

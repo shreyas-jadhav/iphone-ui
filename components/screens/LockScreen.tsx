@@ -21,19 +21,19 @@ const LockScreenWrapper = styled.div`
 
 const AnimatedLockScreen = animated(LockScreenWrapper);
 export const LockLogo = styled.div`
-	margin: 16px auto 0px;
-	height: 30px;
+	margin: 2rem auto 0px;
+	height: 5vh;
 `;
 
 export const Time = styled.h1`
-	font-size: 46px;
+	font-size: 4rem;
 	font-weight: normal;
 	text-align: center;
 	margin: 4px auto;
 `;
 const DateDisplay = styled.h2`
 	margin: 0;
-	font-size: 12px;
+	font-size: 1rem;
 	font-weight: 600;
 	text-align: center;
 `;
@@ -48,19 +48,19 @@ const BottomIcons = styled.div`
 `;
 
 export const CircularIcon = styled.button`
-	height: 36px;
-	width: 36px;
+	height: 3.5rem;
+	width: 3.5rem;
 	border: none;
 	background: rgba(0, 0, 0, 0.3);
 	border-radius: 50%;
-	padding: 4px;
+
 	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	svg {
-		height: 22px;
-		width: 22px;
+		height: 2rem;
+		width: 2rem;
 	}
 
 	${transiton('all')};
